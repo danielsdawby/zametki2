@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="column1" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Первый столбец (не более 3 карточек)</h2>
+            <button onclick="addCard('column1')">Добавить карточку</button>
+        </div>
+        <div id="column2" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Второй столбец (не более 5 карточек)</h2>
+            <button onclick="addCard('column2')">Добавить карточку</button>
+        </div>
+        <div id="column3" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Третий столбец (не ограничен)</h2>
+            <button onclick="addCard('column3')">Добавить карточку</button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
